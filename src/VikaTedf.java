@@ -8,5 +8,6 @@ public class VikaTedf
         System.out.println("Hey");
         System.out.println("Hadji");
 
+        Hadji hadji = new Hadji();
     }
 }
