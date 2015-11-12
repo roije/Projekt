@@ -22,6 +22,8 @@ public class VikaTedf
             System.out.println("Wtf Hadji");
         }
 
+        //du får ikke java sql connector??
+
 
 
         //Hey
