@@ -9,6 +9,7 @@ public class VikaTedf
         System.out.println("Hadji");
 
         Hadji hadji = new Hadji();
+        System.out.print("fdg");
 
 
 
