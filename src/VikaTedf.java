@@ -9,9 +9,18 @@ public class VikaTedf
         System.out.println("Hadji");
 
         Hadji hadji = new Hadji();
-        System.out.print("fdg");
-        System.out.print("fdg");
+        System.out.println("fdg");
+        System.out.println("fdg");
 
+        hadji.setInSchool(false);
+        if (hadji.isInSchool())
+        {
+            System.out.println("Hadji power");
+        }
+        else
+        {
+            System.out.println("Wtf Hadji");
+        }
 
 
 
