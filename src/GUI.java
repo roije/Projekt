@@ -1,4 +1,5 @@
 import javafx.application.Application;
+import javafx.geometry.Insets;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Tab;
@@ -13,10 +14,23 @@ import javafx.stage.Stage;
  */
 public class GUI extends Application {
 
+    GridPane root;
+    Stage window;
 
-    public GUI()
+    public void GUI()
     {
+        //Gridpane
+        root = new GridPane();
+        root.setStyle("-fx-background-color: linear-gradient(#42C0FB, #236B8E) ");
+        root.setHgap(10);
+        root.setVgap(10);
+        root.setPadding(new Insets(15));
 
+        //Create scene
+        Scene scene = new Scene(root, 1280, 700);
+        window.setScene(scene);
+        window.setResizable(false);
+        window.show();
     }
 
     public static void main(String[] args)
@@ -25,21 +39,19 @@ public class GUI extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) throws Exception
+    {
+        window = primaryStage;
+        GUI();
+    }
 
-        primaryStage.setTitle("VikarApp");
-        GridPane root = new GridPane();
-        Scene scene1 = new Scene(root, 800, 800);
+    public void logIn()
+    {
+        GUI();
+    }
 
-        TabPane tabPane = new TabPane();
-        Tab tab = new Tab();
-        tab.setText("new tab");
-        tab.setContent(new Rectangle(200,200, Color.LIGHTSTEELBLUE));
-        tabPane.getTabs().add(tab);
-
-        root.getChildren().addAll(tabPane);
-        primaryStage.setScene(scene1);
-        primaryStage.show();
-
+    public void seller()
+    {
+        GUI();
     }
 }
