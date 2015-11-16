@@ -17,6 +17,17 @@ public class GUI extends Application {
     GridPane root;
     Stage window;
 
+    /*
+    Label headLine = new Label("Administrator");
+        Reflection r = new Reflection();
+        r.setFraction(0.7f);
+        headLine.setEffect(r);
+        headLine.setTextFill(Color.GHOSTWHITE);
+        headLine.setFont(Font.font("Verdana", FontWeight.BOLD, 40));
+        root.getChildren().add(headLine);
+        root.setConstraints(headLine, 1, 1, 4, 1);
+     */
+
     public void GUI()
     {
         //Gridpane
@@ -59,5 +70,7 @@ public class GUI extends Application {
         System.out.println("roiG");
 
         //prøv selv at få dette med.
+
+        //hadji power
     }
 }
