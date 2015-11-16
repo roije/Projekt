@@ -54,5 +54,6 @@ public class GUI extends Application {
     {
         GUI();
         System.out.print("jygjhg");
+        System.out.print("jygjhg");
     }
 }
