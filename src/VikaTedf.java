@@ -15,6 +15,7 @@ public class VikaTedf
         System.out.println("fdg");
         System.out.println("fdg");
         System.out.print("Is Hadji in school? ");
+        System.out.print("");
         String answer = input.next();
         if (answer.equals("Yes"))
         {
