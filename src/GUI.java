@@ -53,6 +53,6 @@ public class GUI extends Application {
     public void seller()
     {
         GUI();
-        System.out.print("");
+        System.out.print("jygjhg");
     }
 }
