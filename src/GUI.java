@@ -47,12 +47,14 @@ public class GUI extends Application {
 
         loginHBox = new HBox();
 
-        login = new Button();
+        login = new Button("Login");
 
         loginTextfield = new TextField();
         passwordField = new PasswordField();
 
-
+        loginHBox.setSpacing(20);
+        loginHBox.getChildren().addAll(loginTextfield, passwordField, login);
+        gridRoot.getChildren().addAll(loginHBox);
 
     }
 
