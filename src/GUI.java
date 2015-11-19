@@ -20,33 +20,40 @@ import javafx.stage.Stage;
 public class GUI extends Application {
 
     BorderPane root;
+    GridPane gridRoot;
     Stage window;
     ToggleGroup tGroup;
     ToggleButton myProfileBtn, sellersBtn, buyersBtn, matchesBtn, tasksBtn,  signOutBtn;
+    Button login;
     Label headLine;
     VBox topVBox;
-    HBox buttonBox;
+    HBox buttonBox, loginHBox;
+    TextField loginTextfield;
+    PasswordField passwordField;
 
 
     public void GUI()
     {
         //BorderPane
-        root = new BorderPane();
-        root.setStyle("-fx-background-color: linear-gradient(#42C0FB, #236B8E) ");
-        root.setPadding(new Insets(15));
-        topVBox = new VBox();
-        topVBox.setPrefWidth(1280);
-        topVBox.setSpacing(70);
-        root.setTop(topVBox);
-        buttonBox = new HBox();
-        buttonBox.setPrefWidth(1280);
-        buttonBox.setSpacing(5);
 
-        //Create scene
-        Scene scene = new Scene(root, 1280, 700);
-        window.setScene(scene);
-        window.setResizable(false);
+
+    }
+    public void Login()
+    {
+        gridRoot = new GridPane();
+        Scene sceneLogin = new Scene(gridRoot, 600, 600);
+        window.setScene(sceneLogin);
         window.show();
+
+        loginHBox = new HBox();
+
+        login = new Button();
+
+        loginTextfield = new TextField();
+        passwordField = new PasswordField();
+
+
+
     }
 
     public static void main(String[] args)
@@ -58,17 +65,30 @@ public class GUI extends Application {
     public void start(Stage primaryStage) throws Exception
     {
         window = primaryStage;
-        homeScreen();
-    }
-
-    public void logIn()
-    {
-        GUI();
+        Login();
     }
 
     public void homeScreen()
     {
-        GUI();
+        root = new BorderPane();
+        root.setStyle("-fx-background-color: linear-gradient(#42C0FB, #236B8E) ");
+        root.setPadding(new Insets(15));
+        topVBox = new VBox();
+        topVBox.setPrefWidth(1280);
+        topVBox.setSpacing(70);
+        root.setTop(topVBox);
+        buttonBox = new HBox();
+        buttonBox.setPrefWidth(1280);
+        buttonBox.setSpacing(5);
+        window.show();
+
+        //Create scene
+        Scene scene = new Scene(root, 1280, 700);
+        window.setScene(scene);
+        window.setResizable(false);
+
+
+
 
         //Label
         headLine = new Label("Vicarius");
