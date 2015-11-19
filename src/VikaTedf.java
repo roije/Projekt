@@ -18,6 +18,7 @@ public class VikaTedf
         System.out.print("");
         System.out.print("");
         String answer = input.next();
+        //dskfjsdk
         if (answer.equals("Yes"))
         {
             hadji.setInSchool(true);

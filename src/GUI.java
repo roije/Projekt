@@ -70,6 +70,7 @@ public class GUI extends Application {
         Login();
     }
 
+    //Home screen contains buttons to navigate between user profile and different lists
     public void homeScreen()
     {
         root = new BorderPane();
@@ -88,8 +89,6 @@ public class GUI extends Application {
         Scene scene = new Scene(root, 1280, 700);
         window.setScene(scene);
         window.setResizable(false);
-
-
 
 
         //Label
