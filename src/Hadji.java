@@ -10,6 +10,8 @@ public class Hadji {
     public Hadji() {
 
         System.out.println("Hadji 2");
+        System.out.println("Hadji 222");
+
     }
 
     public void setInSchool(boolean boo)
